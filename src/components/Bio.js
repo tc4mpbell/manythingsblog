@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { FaTree, FaTwitter, FaEnvelope } from 'react-icons/fa'
 // Import typefaces
 import 'typeface-montserrat'
 import 'typeface-merriweather'
@@ -27,13 +27,29 @@ class Bio extends React.Component {
             borderRadius: '100%',
           }}
         />
-        <p>
-          Written by <strong>Taylor Campbell</strong>, founder of ProjectPoll,
-          living and working in Richmond, VA.{' '}
-          <a href="https://twitter.com/manythingsblue">
-            You should follow him on Twitter
-          </a>
-        </p>
+        <div>
+          <div>
+            <strong>Taylor Campbell</strong> is building{' '}
+            <a href="https://projectpoll.co" target="_blank">
+              ProjectPoll
+            </a>{' '}
+            in the woods of Virginia <FaTree />.
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <span>
+              <FaTwitter />{' '}
+              <a href="https://twitter.com/manythingsblue" target="_blank">
+                @manythingsblue
+              </a>
+            </span>
+            <span>
+              <FaEnvelope />{' '}
+              <a href="mailto:taylor@manythingsblue.com">
+                taylor@manythingsblue.com
+              </a>
+            </span>
+          </div>
+        </div>
       </div>
     )
   }

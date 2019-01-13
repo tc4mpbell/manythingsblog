@@ -61,9 +61,6 @@ class Layout extends React.Component {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
-        <a href="/" style={{ marginBottom: '1rem', display: 'inline-block' }}>
-          &larr; back to blog home
-        </a>
         {header}
         {children}
       </div>

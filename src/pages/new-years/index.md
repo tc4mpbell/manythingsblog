@@ -2,7 +2,7 @@
 title: "2019! Nostalgia, micro-ISVs"
 date: "2019-01-09"
 tags: []
-published: true
+published: false
 ---
 
 Hey it's 2019! ✨
