@@ -73,5 +73,5 @@ So. Actionable things I've learned while stream-of-consciousnessing this post:
 
 ----
 
-*__Postscript &mdash;__
-Thanks for reading! I learned a lot about what I was trying to say while writing this down. I'm going to write more in 2019. It'll get better with practice :). If you have comments, I'd love to hear from you -- [taylor@manythingsblue.com](mailto:taylor@manythingsblue.com). [@manythingsblue](https://twitter.com/manythingsblue) on Twitter.*
+*__Postscript:__
+Thanks for reading! If you have comments, I'd love to hear from you -- [taylor@manythingsblue.com](mailto:taylor@manythingsblue.com), or [@manythingsblue](https://twitter.com/manythingsblue) on Twitter.*
