@@ -13,7 +13,7 @@ published: true
 
 Whenever I'm stuck on something, if I stop and just write things down on paper, it inevitably becomes clear. 
 
-Topical anecodote: I've been working on [ProjectPoll](https://projectpoll.co). It's a pre-revenue, nights-and-weekends project, and I'm definitely past my comfort zone (half-coded, unlaunched things ;)).
+Topical anecdote: I've been working on [ProjectPoll](https://projectpoll.co). It's a pre-revenue, nights-and-weekends project, and I'm definitely past my comfort zone (half-coded, unlaunched things ;)).
 
 I've always loved building things, but marketing is scary and unfamiliar. And there's an overwhelming amount of information out there about the Right Way to do things, complete with stats on how amazingly they worked for the author's unicorn startup.
 
