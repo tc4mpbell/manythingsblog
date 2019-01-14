@@ -13,13 +13,13 @@ published: true
 
 Whenever I'm stuck on something, if I stop and just write things down on paper, it inevitably becomes clear. 
 
-Topical anecodote: I've been working on ProjectPoll. It's a pre-revenue, nights-and-weekends project, and I'm definitely past my comfort zone (half-coded, unlaunched things ;)).
+Topical anecodote: I've been working on [ProjectPoll](https://projectpoll.co). It's a pre-revenue, nights-and-weekends project, and I'm definitely past my comfort zone (half-coded, unlaunched things ;)).
 
 I've always loved building things, but marketing is scary and unfamiliar. And there's an overwhelming amount of information out there about the Right Way to do things, complete with stats on how amazingly they worked for the author's unicorn startup.
 
 Validate first, get people committed to pay before you start writing a line of code... These are all good and true. I didn't do them. And I think it's easy to discount how hard they are. I assume it gets easier, but let's not pretend these are obvious or easy things to do.
 
-Continuing anecdote: I started building ProjectPoll in August '18 (without validation). It's a scratch-my-own-itch idea. I took 3 months (nights/weekends) and got it to a usable state. And here's the problem: What should I focus on next? This has been remarkably difficult and emotional to figure out, and I've veered madly back and forth between excitement and despair.
+Continuing anecdote: I started building [ProjectPoll](https://projectpoll.co) in August '18 (without validation). It's a scratch-my-own-itch idea. I took 3 months (nights/weekends) and got it to a usable state. And here's the problem: What should I focus on next? This has been remarkably difficult and emotional to figure out, and I've veered madly back and forth between excitement and despair.
 
 ### The downward spiral of uncertainty
 
