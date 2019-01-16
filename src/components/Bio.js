@@ -13,17 +13,18 @@ class Bio extends React.Component {
       <div
         style={{
           display: 'flex',
+          alignContent: 'center',
           marginBottom: rhythm(2.5),
         }}
       >
         <img
           src={profilePic}
-          alt={`Kyle Mathews`}
+          alt={`Taylor Campbell`}
           style={{
             marginRight: rhythm(1 / 2),
             marginBottom: 0,
-            width: rhythm(2),
-            height: rhythm(2),
+            width: rhythm(3),
+            height: rhythm(3),
             borderRadius: '100%',
           }}
         />
@@ -33,21 +34,21 @@ class Bio extends React.Component {
             <a href="https://projectpoll.co" target="_blank">
               ProjectPoll
             </a>{' '}
-            in the woods of Virginia <FaTree />.
+            in the woods of Virginia <FaTree />
           </div>
-          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <span>
+          <div style={{ display: 'flexx', justifyContent: 'space-between' }}>
+            <div>
               <FaTwitter />{' '}
               <a href="https://twitter.com/manythingsblue" target="_blank">
                 @manythingsblue
               </a>
-            </span>
-            <span>
+            </div>
+            <div>
               <FaEnvelope />{' '}
               <a href="mailto:taylor@manythingsblue.com">
                 taylor@manythingsblue.com
               </a>
-            </span>
+            </div>
           </div>
         </div>
       </div>

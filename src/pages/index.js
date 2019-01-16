@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 
 import Bio from '../components/Bio'
+import Img from 'gatsby-image'
 import Layout from '../components/Layout'
 import { rhythm } from '../utils/typography'
 
@@ -34,9 +35,14 @@ class BlogIndex extends React.Component {
                 }}
               >
                 <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                  <Img
+                    sizes={node.frontmatter.featuredImage.childImageSharp.sizes}
+                    style={{ maxHeight: 100, marginBottom: rhythm(1 / 4) }}
+                  />
                   {title}
                 </Link>
               </h3>
+
               <small>{node.frontmatter.date}</small>
               <p dangerouslySetInnerHTML={{ __html: summary }} />
             </div>
@@ -69,6 +75,13 @@ export const pageQuery = graphql`
             title
             published
             summary
+            featuredImage {
+              childImageSharp {
+                sizes(maxWidth: 630) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
+            }
           }
         }
       }

@@ -4,6 +4,7 @@ date: "2019-01-11"
 tags: ["startups", "decisions", "writing"]
 summary: "In which Taylor learns the power of writing things down. Or maybe learns a lesson about validating before coding. Or about launching too soon. All of the above, perhaps."
 published: true
+featuredImage: "./filtered-desk.jpg"
 ---
 
 **TL/DR:**
