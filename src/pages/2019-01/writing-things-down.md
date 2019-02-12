@@ -30,7 +30,7 @@ So clearly, the right idea is to start selling first.
 
 But that's miserable. Cold emails are a numbers game. And what am I asking for? A purchase? A call? If the only real test is whether someone will pay for it, I need to sell it like it's done, right?
 
-And it doesn't feel comfortable saying it's done. It needs a couple features. Some polish. Y'know, I'm in this for the long haul. I'm fine if it takes a couple years for this to be a real business. Maybe I should ignore the fast-growth-VC voices and build the best damn app I know how, and be confident that this is a real problem in my niche. And sucess will follow.
+And it doesn't feel comfortable saying it's done. It needs a couple features. Some polish. Y'know, I'm in this for the long haul. I'm fine if it takes a couple years for this to be a real business. Maybe I should ignore the fast-growth-VC voices and build the best damn app I know how, and be confident that this is a real problem in my niche. And success will follow.
 
 Open code editor. Repeat process. Feel shitty and uncertain.
 
