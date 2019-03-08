@@ -11,49 +11,18 @@ import { rhythm, scale } from '../utils/typography'
 
 class PageTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
-    const siteBaseUrl = this.props.location.origin
-    const siteDescription = post.excerpt
-    const { previous, next } = this.props.pageContext
+    const { title, children } = this.props
 
     return (
-      <>
-        <Layout location={this.props.location} title={siteTitle}>
-          <Helmet
-            htmlAttributes={{ lang: 'en' }}
-            title={`${post.frontmatter.title} | ${siteTitle}`}
-          />
+      <Layout>
+        <Helmet htmlAttributes={{ lang: 'en' }} title={'manythingsblue'} />
 
-          <h1>{post.frontmatter.title}</h1>
+        <h1>{title}</h1>
 
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        </Layout>
-      </>
+        {children}
+      </Layout>
     )
   }
 }
 
 export default PageTemplate
-
-export const pageQuery = graphql`
-  query PageBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-        author
-      }
-    }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
-      excerpt
-      // html
-      frontmatter {
-        title
-        published
-        summary
-        date(formatString: "MMMM DD, YYYY")
-      }
-    }
-  }
-`
