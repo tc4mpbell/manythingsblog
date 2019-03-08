@@ -74,11 +74,22 @@ class Layout extends React.Component {
 
     return (
       <>
-        <Flex width={1} justifyContent={'stretch'}>
+        <Flex width={1} justifyContent={'stretch'} style={{ height: '3em' }}>
           {colors[randomColor].map(color => (
-            <div
+            <Box
               key={color}
-              style={{ background: color, height: '3em', flex: 1 }}
+              style={{
+                background: color,
+                height: '3em',
+                flex: 1,
+                transition: '1s',
+              }}
+              onMouseEnter={e => {
+                e.target.style.height = '100vh'
+              }}
+              onMouseLeave={e => {
+                e.target.style.height = '3em'
+              }}
             />
           ))}
         </Flex>
