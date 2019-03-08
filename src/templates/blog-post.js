@@ -2,6 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 
+import { Flex } from 'rebass'
+
 import Bio from '../components/Bio'
 import Img from 'gatsby-image'
 import Layout from '../components/Layout'
@@ -17,20 +19,6 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <>
-        <div
-          style={{
-            width: '100%',
-            left: 0,
-            height: 200,
-            background: `url(${
-              post.frontmatter.featuredImage.childImageSharp.sizes.src
-            }) 0 -100px no-repeat`,
-            backgroundSize: 'cover',
-          }}
-        >
-          {/* <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} /> */}
-        </div>
-
         <Layout location={this.props.location} title={siteTitle}>
           <Helmet
             htmlAttributes={{ lang: 'en' }}
@@ -61,6 +49,19 @@ class BlogPostTemplate extends React.Component {
             ]}
             title={`${post.frontmatter.title} | ${siteTitle}`}
           />
+
+          <div
+            style={{
+              width: '100%',
+              // left: 0,
+              height: 200,
+              background: `url(${
+                post.frontmatter.featuredImage.childImageSharp.sizes.src
+              }) 0 -100px no-repeat`,
+              backgroundSize: 'cover',
+            }}
+          />
+
           <h1>{post.frontmatter.title}</h1>
           <p
             style={{
