@@ -2,7 +2,7 @@
 
 rethinking digital life
 
-In which Taylor realizes he's not great at doing important things, makes 
+*In which Taylor realizes he's not great at doing important things first.*
 
 I'm not very purposeful about my computer time. I'm working on ProjectPoll on nights and weekends, so I typically have ~2 hours after my kids are in bed, a full day on Friday (I work 4 day weeks), and inconsistent half-days on Saturday/Sunday.
 
