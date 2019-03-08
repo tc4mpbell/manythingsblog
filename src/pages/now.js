@@ -15,8 +15,9 @@ import {
 } from 'react-icons/fa'
 
 const Now = () => (
-  <PageTemplate title="What's happening now">
+  <PageTemplate title="Currently">
     <Image src={forestPic} mb={3} />
+
     <p>
       <FaTree color="green" /> Living in the woods in Ashland, VA.
     </p>
