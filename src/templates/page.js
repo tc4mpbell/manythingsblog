@@ -13,8 +13,13 @@ class PageTemplate extends React.Component {
   render() {
     const { title, children } = this.props
 
+    let loc = {}
+    if (typeof window !== `undefined`) {
+      loc = window.location
+    }
+
     return (
-      <Layout>
+      <Layout location={loc}>
         <Helmet htmlAttributes={{ lang: 'en' }} title={'manythingsblue'} />
 
         <h1>{title}</h1>
