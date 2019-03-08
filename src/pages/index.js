@@ -35,10 +35,10 @@ class BlogIndex extends React.Component {
                 }}
               >
                 <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                  <Img
+                  {/* <Img
                     sizes={node.frontmatter.featuredImage.childImageSharp.sizes}
                     style={{ maxHeight: 100, marginBottom: rhythm(1 / 4) }}
-                  />
+                  /> */}
                   {title}
                 </Link>
               </h3>
