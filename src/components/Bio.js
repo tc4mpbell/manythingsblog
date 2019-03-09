@@ -38,19 +38,19 @@ class Bio extends React.Component {
             ProjectPoll
           </a>{' '}
           in the woods of Virginia <FaTree />
-          <Flex>
-            <Box mr={3}>
-              <FaTwitter />{' '}
-              <a href="https://twitter.com/manythingsblue" target="_blank">
-                @manythingsblue
-              </a>
-            </Box>
-            <div>
-              <FaEnvelope />{' '}
+          <Flex flexDirection={['column']}>
+            <Flex alignItems="center">
+              <Box as={FaEnvelope} mr={1} color="lightBlue" />
               <a href="mailto:taylor@manythingsblue.com">
                 taylor@manythingsblue.com
               </a>
-            </div>
+            </Flex>
+            <Flex alignItems="center">
+              <Box as={FaTwitter} mr={1} color="lightBlue" />
+              <a href="https://twitter.com/manythingsblue" target="_blank">
+                @manythingsblue
+              </a>{' '}
+            </Flex>
           </Flex>
         </Text>
       </Flex>
