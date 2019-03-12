@@ -7,6 +7,7 @@ import Bio from '../components/Bio'
 import Img from 'gatsby-image'
 import Layout from '../components/Layout'
 import { rhythm } from '../utils/typography'
+import { randomColors } from '../utils/colors'
 
 class BlogIndex extends React.Component {
   render() {
@@ -16,16 +17,21 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges.filter(
       post => post.node.frontmatter.published
     )
+    const colors = randomColors()
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout colors={colors} location={this.props.location} title={siteTitle}>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
         />
 
-        <Bio />
+        <Bio
+          p={3}
+          color={colors[9]}
+          style={{ border: `solid 10px ${colors[7]}` }}
+        />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           const summary = node.frontmatter.summary || node.excerpt

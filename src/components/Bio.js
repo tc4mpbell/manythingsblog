@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Text, Box, Image } from 'rebass'
+import { Flex, Text, Box, Image, Link } from 'rebass'
 import { FaTree, FaTwitter, FaEnvelope } from 'react-icons/fa'
 // Import typefaces
 import 'typeface-montserrat'
@@ -12,9 +12,13 @@ class Bio extends React.Component {
   render() {
     return (
       <Flex
+        p={this.props.p}
+        bg={this.props.bg}
+        color={this.props.color}
         flexDirection={['column', 'row']}
         style={{
           marginBottom: rhythm(2.5),
+          ...this.props.style,
         }}
       >
         {/* <Box
@@ -34,22 +38,33 @@ class Bio extends React.Component {
         /> */}
         <Text textAlign={['centerx', 'left']}>
           <strong>Taylor Campbell</strong> is building{' '}
-          <a href="https://projectpoll.co" target="_blank">
+          <Link
+            color={this.props.linkColor}
+            href="https://projectpoll.co"
+            target="_blank"
+          >
             ProjectPoll
-          </a>{' '}
+          </Link>{' '}
           in the woods of Virginia <FaTree />
           <Flex flexDirection={['column']}>
             <Flex alignItems="center">
               <Box as={FaEnvelope} mr={1} color="lightBlue" />
-              <a href="mailto:taylor@manythingsblue.com">
+              <Link
+                color={this.props.linkColor}
+                href="mailto:taylor@manythingsblue.com"
+              >
                 taylor@manythingsblue.com
-              </a>
+              </Link>
             </Flex>
             <Flex alignItems="center">
               <Box as={FaTwitter} mr={1} color="lightBlue" />
-              <a href="https://twitter.com/manythingsblue" target="_blank">
+              <Link
+                color={this.props.linkColor}
+                href="https://twitter.com/manythingsblue"
+                target="_blank"
+              >
                 @manythingsblue
-              </a>{' '}
+              </Link>{' '}
             </Flex>
           </Flex>
         </Text>
