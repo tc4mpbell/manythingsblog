@@ -102,7 +102,6 @@ class BlogPostTemplate extends React.Component {
             }}
           />
           <Bio
-            p={3}
             color={colors[9]}
             style={{ border: `solid 10px ${colors[7]}` }}
           />

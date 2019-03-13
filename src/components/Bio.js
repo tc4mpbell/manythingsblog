@@ -12,7 +12,6 @@ class Bio extends React.Component {
   render() {
     return (
       <Flex
-        p={this.props.p}
         bg={this.props.bg}
         color={this.props.color}
         flexDirection={['column', 'row']}
@@ -20,6 +19,7 @@ class Bio extends React.Component {
           marginBottom: rhythm(2.5),
           ...this.props.style,
         }}
+        p={3}
       >
         {/* <Box
           as="img"
