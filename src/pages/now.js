@@ -19,23 +19,27 @@ const Now = () => (
     <Image src={forestPic} mb={3} />
 
     <p>
-      <FaTree color="green" /> Living in the woods in Ashland, VA.
+      <FaTree color="green" /> We live in a 1000sqft apartment in Ashland, VA,
+      on 10 acres in the woods. I love the country,
     </p>
     <p>
-      <FaHeart color="red" /> Hanging out with with Anya, Imogen, and Ira.
+      <FaHeart color="red" /> Anya is homeschooling Imogen and Ira -- it's been
+      amazing. I can't claim much credit here, but we do some Code.org on
+      Fridays 😎.
       <FaFemale color="blue" />
       <FaChild color="violet" />
       <FaChild color="gray" />
     </p>
     <p>
-      <FaCode /> Building{' '}
+      <FaCode /> I'm building{' '}
       <a href="https://projectpoll.co" target="_blank">
         ProjectPoll
       </a>{' '}
       on nights &amp; weekends. <FaMoon color="lightgray" />
     </p>
     <p>
-      <FaGem /> Writing Ruby on Rails by day.
+      <FaGem /> I work at a consulting company by day, doing Ruby on Rails and
+      React.
     </p>
   </PageTemplate>
 )

@@ -48,9 +48,7 @@ class BlogPostTemplate extends React.Component {
               },
               {
                 name: 'twitter:image',
-                content: `${siteBaseUrl}${
-                  post.frontmatter.featuredImage.childImageSharp.sizes.src
-                }`,
+                content: `${siteBaseUrl}${post.frontmatter.featuredImage.childImageSharp.sizes.src}`,
               },
             ]}
             title={`${post.frontmatter.title} | ${siteTitle}`}
@@ -61,12 +59,13 @@ class BlogPostTemplate extends React.Component {
               width: '100%',
               // left: 0,
               height: 200,
-              background: `url(${
-                post.frontmatter.featuredImage.childImageSharp.sizes.src
-              }) 0 -100px no-repeat`,
+              background: `url(${post.frontmatter.featuredImage.childImageSharp.sizes.src}) 0 -100px no-repeat`,
               backgroundSize: 'cover',
             }}
           />
+          {post.frontmatter.imageCredit && (
+            <em>{post.frontmatter.imageCredit}</em>
+          )}
 
           <h1>
             <Text color={colors[6]}>{post.frontmatter.title}</Text>

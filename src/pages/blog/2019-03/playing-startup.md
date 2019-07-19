@@ -14,7 +14,7 @@ featuredImage: "./friends-drinking-coffee_925x.jpg"
 
 ---
 
-**Context:** I'm building ProjectPoll by myself, without outside money, on the side of a full-time job, with a family.
+**Context:** I'm building [ProjectPoll](https://projectpoll.co) by myself, without outside money, on the side of a full-time job, with a family.
 
 That's (definitely) not bragging — I'm making all the mistakes, and moving at a glacial pace. But it's useful context for this article.
 
