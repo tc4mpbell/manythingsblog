@@ -4,7 +4,7 @@ date: "2019-03-11"
 tags: ["startups", "decisions"]
 summary: "In which Taylor play-acts at startups, then starts to grasp the most fundamental piece of startup advice that people have been telling him loudly for eternity 😬."
 published: true
-featuredImage: "./friends-drinking-coffee_925x.jpg"
+featuredImage: "./coffee-cropped.png"
 ---
 
 

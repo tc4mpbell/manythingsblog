@@ -68,7 +68,8 @@ class BlogPostTemplate extends React.Component {
                   width: '100%',
                   // left: 0,
                   height: 200,
-                  background: `url(${post.frontmatter.featuredImage.childImageSharp.sizes.src}) 0 -100px no-repeat`,
+                  boxShadow: '0 0 1px #000',
+                  background: `url(${post.frontmatter.featuredImage.childImageSharp.sizes.src}) 0 0px no-repeat`,
                   backgroundSize: 'cover',
                 }}
               />

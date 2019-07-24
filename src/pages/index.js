@@ -30,9 +30,7 @@ class BlogIndex extends React.Component {
         <Bio
           color={colors[9]}
           style={{
-            border: `solid 1px ${colors[3]}`,
-            borderLeft: 0,
-            borderRight: 0,
+            border: `solid 4px ${colors[3]}`,
             background: colors[440],
           }}
         />

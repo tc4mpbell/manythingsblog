@@ -19,11 +19,11 @@ class Layout extends React.Component {
         <h1
           style={{
             ...scale(1.5),
-            marginBottom: rhythm(1.5),
+            marginBottom: 10,
             marginTop: 0,
           }}
         >
-          <Text color={colors[6]}>{title}</Text>
+          <Text color={'black'}>{title}</Text>
         </h1>
       )
     } else {
@@ -64,21 +64,25 @@ class Layout extends React.Component {
 
     return (
       <>
-        <Flex width={1} justifyContent={'stretch'} style={{ height: '3em' }}>
+        <Flex
+          width={1}
+          justifyContent={'stretch'}
+          style={{ height: '3em', zIndex: '-1' }}
+        >
           {colors.map(color => (
             <Box
               key={color}
               style={{
                 background: color,
-                height: '3em',
+                height: '20em',
                 flex: 1,
                 transition: '1s',
               }}
               onMouseEnter={e => {
-                e.target.style.height = '100vh'
+                // e.target.style.height = '12em'
               }}
               onMouseLeave={e => {
-                e.target.style.height = '3em'
+                // e.target.style.height = '14em'
               }}
             />
           ))}
@@ -88,6 +92,7 @@ class Layout extends React.Component {
           style={{
             marginLeft: 'auto',
             marginRight: 'auto',
+            position: 'relative',
             maxWidth: rhythm(24),
             padding: ` ${rhythm(1.5)} ${rhythm(3 / 4)}`,
           }}

@@ -12,14 +12,14 @@ class Bio extends React.Component {
   render() {
     return (
       <Flex
-        bg={this.props.bg}
+        bg={this.props.bg || 'white'}
         color={this.props.color}
         flexDirection={['column', 'row']}
         style={{
-          marginBottom: rhythm(2.5),
+          marginBottom: rhythm(1.5),
           ...this.props.style,
         }}
-        p={3}
+        p={4}
       >
         {/* <Box
           as="img"
@@ -46,8 +46,8 @@ class Bio extends React.Component {
             ProjectPoll
           </Link>{' '}
           in the woods of Virginia <FaTree />
-          <Flex flexDirection={['column']}>
-            <Flex alignItems="center">
+          <Flex flexDirection={['column']} mt={3}>
+            <Flex alignItems="center" mb={1}>
               <Box as={FaEnvelope} mr={1} color="lightBlue" />
               <Link
                 color={this.props.linkColor}
