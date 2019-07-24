@@ -27,7 +27,15 @@ class BlogIndex extends React.Component {
           title={siteTitle}
         />
 
-        <Bio color={colors[9]} style={{ border: `solid 10px ${colors[7]}` }} />
+        <Bio
+          color={colors[9]}
+          style={{
+            border: `solid 1px ${colors[3]}`,
+            borderLeft: 0,
+            borderRight: 0,
+            background: colors[440],
+          }}
+        />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           const summary = node.frontmatter.summary || node.excerpt

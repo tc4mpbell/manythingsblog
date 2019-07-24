@@ -19,6 +19,32 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
     const colors = randomColors()
 
+    const twitterMeta = [
+      {
+        name: 'twitter:card',
+        content: `summary_large_image`,
+      },
+      {
+        name: 'twitter:title',
+        content: post.frontmatter.title,
+      },
+      {
+        name: 'twitter:description',
+        content: post.frontmatter.summary,
+      },
+      {
+        name: 'twitter:site',
+        content: `@manythingsblue`,
+      },
+    ]
+
+    if (post.frontmatter.featuredImage) {
+      twitterMeta.push({
+        name: 'twitter:image',
+        content: `${siteBaseUrl}${post.frontmatter.featuredImage.childImageSharp.sizes.src}`,
+      })
+    }
+
     return (
       <>
         <Layout
@@ -30,41 +56,26 @@ class BlogPostTemplate extends React.Component {
             htmlAttributes={{ lang: 'en' }}
             meta={[
               { name: 'description', content: siteDescription },
-              {
-                name: 'twitter:card',
-                content: `summary_large_image`,
-              },
-              {
-                name: 'twitter:title',
-                content: post.frontmatter.title,
-              },
-              {
-                name: 'twitter:description',
-                content: post.frontmatter.summary,
-              },
-              {
-                name: 'twitter:site',
-                content: `@manythingsblue`,
-              },
-              {
-                name: 'twitter:image',
-                content: `${siteBaseUrl}${post.frontmatter.featuredImage.childImageSharp.sizes.src}`,
-              },
+              ...twitterMeta,
             ]}
             title={`${post.frontmatter.title} | ${siteTitle}`}
           />
 
-          <div
-            style={{
-              width: '100%',
-              // left: 0,
-              height: 200,
-              background: `url(${post.frontmatter.featuredImage.childImageSharp.sizes.src}) 0 -100px no-repeat`,
-              backgroundSize: 'cover',
-            }}
-          />
-          {post.frontmatter.imageCredit && (
-            <em>{post.frontmatter.imageCredit}</em>
+          {post.frontmatter.featuredImage && (
+            <>
+              <div
+                style={{
+                  width: '100%',
+                  // left: 0,
+                  height: 200,
+                  background: `url(${post.frontmatter.featuredImage.childImageSharp.sizes.src}) 0 -100px no-repeat`,
+                  backgroundSize: 'cover',
+                }}
+              />
+              {post.frontmatter.imageCredit && (
+                <em>{post.frontmatter.imageCredit}</em>
+              )}
+            </>
           )}
 
           <h1>
