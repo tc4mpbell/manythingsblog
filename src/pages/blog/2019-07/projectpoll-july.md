@@ -16,8 +16,7 @@ Up til now, when you clicked into a project, the project nav would kinda take ov
 Now, there's a two tier top nav, which feels a lot more consistent. Account links are all tucked into a dropdown, and second-level links have a consistent, tab-like structure.
 
 ### Here's how it looks now 😍
-<img src='./new-pp-nav.png' />
-<br>
+![New nav](./new-pp-nav.png)
 
 That's about it! **Next up**, I'm going to work on email updates for admins. I have some ideas to make these useful, by auto-analyzing the patterns and suggesting changes, but the v1 will prob be pretty simple.
 
