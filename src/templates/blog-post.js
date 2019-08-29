@@ -80,7 +80,20 @@ class BlogPostTemplate extends React.Component {
           )}
 
           <h1>
-            <Text color={colors[6]}>{post.frontmatter.title}</Text>
+            <Flex justifyContent="space-betweenx" alignItems="center">
+              <Text color={colors[6]}>
+                {post.frontmatter.titleLink && (
+                  <a
+                    style={{ boxShadow: 'none', textDecoration: 'none' }}
+                    href={post.frontmatter.titleLink}
+                    target="_blank"
+                  >
+                    ⭐️ {post.frontmatter.title}
+                  </a>
+                )}
+                {!post.frontmatter.titleLink && post.frontmatter.title}
+              </Text>
+            </Flex>
           </h1>
           <p
             style={{
@@ -166,6 +179,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        titleLink
         published
         summary
         date(formatString: "MMMM DD, YYYY")
