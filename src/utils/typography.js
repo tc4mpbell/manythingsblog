@@ -5,6 +5,9 @@ Wordpress2016.overrideThemeStyles = () => ({
   'a.gatsby-resp-image-link': {
     boxShadow: 'none',
   },
+  'h1,h2': {
+    fontFamily: 'Montserrat, sans-serif',
+  },
 })
 
 delete Wordpress2016.googleFonts

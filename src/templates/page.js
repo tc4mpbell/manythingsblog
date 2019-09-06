@@ -21,7 +21,7 @@ class PageTemplate extends React.Component {
     }
 
     return (
-      <Layout colors={colors} location={loc}>
+      <Layout colors={colors} location={loc} maxWidth={rhythm(36)}>
         <Helmet htmlAttributes={{ lang: 'en' }} title={'manythingsblue'} />
 
         <h1>

@@ -14,6 +14,7 @@ class Bio extends React.Component {
       <Flex
         bg={this.props.bg || 'white'}
         color={this.props.color}
+        alignItems="center"
         flexDirection={['column', 'row']}
         style={{
           marginBottom: rhythm(1.5),
@@ -36,38 +37,40 @@ class Bio extends React.Component {
             borderRadius: '100%',
           }}
         /> */}
-        <Text textAlign={['centerx', 'left']}>
-          <strong>Taylor Campbell</strong> is building{' '}
+        <Text textAlign={['left']} mr={[0, 4]} mb={[2, 0]}>
+          <strong>Taylor Campbell</strong> lives in the woods of Virginia,
+          travels with his family, and builds things with Rails and Javascript.
+          (Check out{' '}
           <Link
             color={this.props.linkColor}
             href="https://projectpoll.co"
             target="_blank"
           >
             ProjectPoll
-          </Link>{' '}
-          in the woods of Virginia <FaTree />
-          <Flex flexDirection={['column']} mt={3}>
-            <Flex alignItems="center" mb={1}>
-              <Box as={FaEnvelope} mr={1} color="lightBlue" />
-              <Link
-                color={this.props.linkColor}
-                href="mailto:taylor@manythingsblue.com"
-              >
-                taylor@manythingsblue.com
-              </Link>
-            </Flex>
-            <Flex alignItems="center">
-              <Box as={FaTwitter} mr={1} color="lightBlue" />
-              <Link
-                color={this.props.linkColor}
-                href="https://twitter.com/manythingsblue"
-                target="_blank"
-              >
-                @manythingsblue
-              </Link>{' '}
-            </Flex>
-          </Flex>
+          </Link>
+          !)
         </Text>
+        <Flex flexDirection={['column']} width={[1, 'auto']}>
+          <Flex justifyContent="left" alignItems={'center'} mb={1}>
+            <Box as={FaEnvelope} mr={1} color="lightBlue" />
+            <Link
+              color={this.props.linkColor}
+              href="mailto:taylor@manythingsblue.com"
+            >
+              taylor@manythingsblue.com
+            </Link>
+          </Flex>
+          <Flex alignItems="center">
+            <Box as={FaTwitter} mr={1} color="lightBlue" />
+            <Link
+              color={this.props.linkColor}
+              href="https://twitter.com/manythingsblue"
+              target="_blank"
+            >
+              @manythingsblue
+            </Link>{' '}
+          </Flex>
+        </Flex>
       </Flex>
     )
   }
