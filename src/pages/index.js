@@ -37,7 +37,6 @@ class BlogIndex extends React.Component {
           color={colors[9]}
           style={{
             border: `solid 4px ${colors[3]}`,
-            background: colors[440],
             marginBottom: 0,
           }}
         />

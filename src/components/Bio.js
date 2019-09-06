@@ -12,7 +12,7 @@ class Bio extends React.Component {
   render() {
     return (
       <Flex
-        bg={this.props.bg || 'white'}
+        backgroundColor={this.props.bg || 'white'}
         color={this.props.color}
         alignItems="center"
         flexDirection={['column', 'row']}
