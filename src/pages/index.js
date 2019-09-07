@@ -81,7 +81,7 @@ class BlogIndex extends React.Component {
 
             <h2>experiments & randomness</h2>
             <Box backgroundColor={colors[8]} color={'white'} p={4} mb={3}>
-              <A href="/maybe.codes" color={colors[0]} fontSize={20}>
+              <A href="/maybe.codes/" color={colors[0]} fontSize={20}>
                 maybe.codes
               </A>{' '}
               (landing page)
@@ -89,7 +89,7 @@ class BlogIndex extends React.Component {
               <small>Aug 2019</small>
             </Box>
             <Box backgroundColor={colors[9]} color={'white'} p={4} mb={3}>
-              <A href="/gamemaker-react" color={colors[0]} fontSize={20}>
+              <A href="/gamemaker-react/" color={colors[0]} fontSize={20}>
                 Card-based Game Creator
               </A>{' '}
               (videos!)
