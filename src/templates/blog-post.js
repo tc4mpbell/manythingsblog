@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 
-import { Flex, Text } from 'rebass'
+import { Flex, Text, Box } from 'rebass'
 
 import Bio from '../components/Bio'
 import Img from 'gatsby-image'
@@ -67,14 +67,16 @@ class BlogPostTemplate extends React.Component {
                 style={{
                   width: '100%',
                   // left: 0,
-                  height: 200,
+                  height: post.frontmatter.featuredImageHeight || 200,
                   boxShadow: '0 0 1px #000',
-                  background: `url(${post.frontmatter.featuredImage.childImageSharp.sizes.src}) 0 0px no-repeat`,
+                  background: `url(${post.frontmatter.featuredImage.childImageSharp.sizes.src}) 0 50% no-repeat`,
                   backgroundSize: 'cover',
                 }}
               />
               {post.frontmatter.imageCredit && (
-                <em>{post.frontmatter.imageCredit}</em>
+                <Text fontStyle="italic" color="#aaa">
+                  {post.frontmatter.imageCredit}
+                </Text>
               )}
             </>
           )}
@@ -84,7 +86,10 @@ class BlogPostTemplate extends React.Component {
               <Text color={colors[6]}>
                 {post.frontmatter.titleLink && (
                   <a
-                    style={{ boxShadow: 'none', textDecoration: 'none' }}
+                    style={{
+                      boxShadow: 'none',
+                      textDecoration: 'none',
+                    }}
                     href={post.frontmatter.titleLink}
                     target="_blank"
                   >
@@ -180,9 +185,11 @@ export const pageQuery = graphql`
       frontmatter {
         title
         titleLink
+        imageCredit
         published
         summary
         date(formatString: "MMMM DD, YYYY")
+        featuredImageHeight
         featuredImage {
           childImageSharp {
             sizes(maxWidth: 630) {
