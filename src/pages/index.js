@@ -38,6 +38,8 @@ class BlogIndex extends React.Component {
           style={{
             border: `solid 4px ${colors[3]}`,
             marginBottom: 0,
+            padding: 32,
+            background: 'white',
           }}
         />
         <Flex flexDirection={['column', 'row']}>
