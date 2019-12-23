@@ -4,6 +4,8 @@ import { Link, graphql } from 'gatsby'
 
 import { Flex, Text, Box } from 'rebass'
 
+import '../assets/blogpost.scss'
+
 import Bio from '../components/Bio'
 import Img from 'gatsby-image'
 import Layout from '../components/Layout'
@@ -65,8 +67,8 @@ class BlogPostTemplate extends React.Component {
             <>
               <div
                 style={{
-                  width: '100%',
-                  // left: 0,
+                  minWidth: '100%',
+                  left: 0,
                   height: post.frontmatter.featuredImageHeight || 200,
                   boxShadow: '0 0 1px #000',
                   background: `url(${post.frontmatter.featuredImage.childImageSharp.sizes.src}) 0 50% no-repeat`,
