@@ -40,8 +40,8 @@ const Now = () => (
           on nights &amp; weekends. <FaMoon color="lightgray" />
         </p>
         <p>
-          <FaGem /> I work at a consulting company by day, doing Ruby on Rails
-          and React.
+          <FaGem /> I work remotely for a software company in Carlsbad, CA,
+          writing Rails and React.
         </p>
       </Box>
     </Flex>
