@@ -53,12 +53,6 @@ class Layout extends React.Component {
         <Box as="a" color="white" href="/" px={3} py={1} fontWeight="bold">
           home
         </Box>
-        {/* <Box as="a" href="/about" mr={3}>
-          about
-        </Box> */}
-        <Box as="a" color="white" href="/now" px={3} py={1} fontWeight="bold">
-          now
-        </Box>
       </Flex>
     )
 
